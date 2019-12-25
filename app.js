@@ -6,7 +6,7 @@ const bodyParser = require("body-parser")
 const session = require("express-session")
 
 //Routes
-
+const genRoutes = require('./routes/gen')
 //Start Express
 const app = express();
 
@@ -31,7 +31,11 @@ app.use((req,res,next)=>{
 })
 
 //Routes go here
+app.use('/', genRoutes);
 
+app.get('/', (req,res)=>{
+    res.render('general/missing')
+})
 
 
 //Start
