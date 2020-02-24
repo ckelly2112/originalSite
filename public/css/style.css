@@ -1,0 +1,98 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+/* MAIN Template rules */
+.customLink {
+
+  text-decoration: none;
+  color:  teal;
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+footer a{
+  text-decoration: none;
+  color: blueviolet;
+}
+
+#templateBody{
+  min-height: 78vh;
+  max-height: 100%;
+}
+
+#mainNavigation{
+  background: linear-gradient(to top, black, blue);
+  margin: 0 10%;
+  padding: 1em;
+  padding-bottom: 1.2rem;
+}
+#mainNavigation li{
+  display: inline-block;
+  padding: 1rem;
+}
+#mainNavigation a{
+  text-decoration: none;
+  color: white;
+  border-radius: 1em;
+  border-style: solid;
+  padding: 1.2rem;  
+}
+#mainNavigation a:hover{
+  color: red;
+}
+
+#mainNavigation ul{
+  text-align: center;
+}
+#mainHeader{
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+#mainHeader a:hover{
+  color: blue;
+}
+
+/* Default Content Settings */
+
+main{
+  margin: 1.5rem;
+  padding-right: 20%;
+  padding-left:20%;
+}
+main h1{
+  text-align: center;
+  color: orangered;
+  padding-bottom: 1rem;
+}
+
+/* Project List Defaults */
+#projectList a{
+  text-decoration: none;
+  color: white;
+  border-radius: 1em;
+  border-style: solid;
+  padding: 1.2rem;
+}
+#projectList a:hover{
+  color: green;
+}
+#projectList ul{
+  text-decoration: none;
+}
+#projectList li{
+  display: block;
+  text-decoration: none;
+  padding: 1.5rem;
+}
