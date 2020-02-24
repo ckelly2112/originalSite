@@ -16,5 +16,13 @@ route.get('/RushWebsite', (req,res)=>{
     res.sendFile('index.html', {root: './public/html'})
 })
 
+route.get('/Sleep', (req,res)=>{
+    res.render('webProjects/sleepOverview')
+})
+
+route.get('/SleepEZ', (req,res)=>{
+    res.redirect('https://sleep-ez.herokuapp.com/')
+})
+
 
 module.exports=route;

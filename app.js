@@ -8,6 +8,7 @@ const session = require("express-session")
 //Routes
 const genRoutes = require('./routes/gen')
 const webRoutes = require('./routes/web')
+const appRoutes = require('./routes/apps')
 //Start Express
 const app = express();
 
@@ -34,6 +35,7 @@ app.use((req,res,next)=>{
 //Routes go here
 app.use('/', genRoutes);
 app.use('/web', webRoutes);
+app.use('/apps', appRoutes);
 
 app.get('/', (req,res)=>{
     res.render('general/missing')
