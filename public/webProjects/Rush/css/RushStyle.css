@@ -1,0 +1,450 @@
+/*CSS RESTART*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*Default settings for text*/
+body
+{
+    background-color: rgb(16,8,6);
+    color: #FFF;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    letter-spacing: .3rem;
+
+}
+/* Default Section setup */
+section
+{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    min-height: 100vh;
+    max-height: 100%;
+    position: relative;
+}
+/* Heading defaults */
+h1,h2,h3,h4 
+{
+    text-transform: uppercase;
+    padding: 1.4rem;
+}
+h1
+{
+    font-size: 5rem;
+}
+h2
+{
+    font-size: 3.5rem;
+}
+h6
+{
+    opacity: .6;
+}
+
+/*Link defaults and buttons made from links*/
+a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.bigButton
+{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    
+    
+}
+.bigButton:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.tourButton
+{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 0.4rem 1rem;
+    font-size: .6rem;
+    
+    
+}
+.tourButton:hover
+{
+    background-color: white;
+    color: black;
+}
+/* Background image overlay defaults */
+.overlay
+{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#mainOverlay
+{   
+    background-image: url(../img/Rush.jpg);   
+}
+#errorOverlay
+{
+    background-image: url(../img/error.jpg);
+}
+
+#tourDates .overlay
+{
+    background-image: url(../img/live.jpg);
+}
+#albumSection .overlay
+{
+    background-image: url(../img/starman.jpg);
+}
+#contactOverlay
+{
+    background-image: url(../img/contact.jpg);
+}
+/* Other images  */
+#bandMemberimg
+{
+    display:inline;
+    position: relative;
+    margin: 0;
+}
+#bandMemberimg img
+{
+    width: 360px;
+    height: 245px;
+    position: relative;
+}
+.playAlbum img
+{
+    height: 245px;
+    width: 360px;
+    position: relative;
+}
+/*Top of page including header and top nav*/
+/* Navigation */
+#topOfPage
+{
+    padding-bottom: 5%;
+    min-height: 100vh;
+    max-height: 100%;
+    position: relative;
+}
+
+#title
+{
+    padding-left: 2rem;
+    padding-right: 1.4rem;
+    font-size: 2rem;
+    text-align: center;
+}
+#title a
+{
+    color: #e7d0ba;
+}
+#title a:hover
+{
+    color: white;
+}
+
+#topOfPage ul
+{   
+    display: inline;
+    line-height: 1.2rem;
+    text-transform: uppercase; 
+}
+
+#topOfPage li
+{
+    display: inline;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: .6rem;    
+}
+#topOfPage li a
+{
+    color: #e7d0ba;
+}
+#topOfPage li a:hover
+{
+    color: white;
+}
+/* Make tablet ul hidden */
+#tabletNav li
+{
+    display: none;
+}
+/* Main Section Defaults */
+#topOfPage main
+{
+    padding-top: 10rem;
+    text-align: center;
+}
+
+main > p
+{
+    color: #e7d0ba;
+}
+
+
+/*Sections and other formatting*/
+
+#aboutSection p
+{
+    width: 50%;
+    margin :0 auto;
+    position: relative;
+}
+#theBand
+{
+    padding: 5rem 0;
+    line-height: 1.5rem;
+}
+/* Tour section formatting */
+.tourInfo
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: left;
+    padding: 1rem 1rem;
+}
+.tourDate
+{
+    text-align: right;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+.tourLocation
+{
+    padding-left: 1rem;
+    color: #e7d0ba;
+}
+.tourLocation > a
+{
+    color: #e7d0ba;
+    font-weight: lighter;
+}
+
+.tourBorder
+{
+    width: 65%;
+    left:20%;
+    border-bottom: .3px solid #e7d0ba;
+    position: relative;
+    opacity: .2;
+}
+
+/* news section formatting */
+#newsSection
+{
+    padding: 5% 10%;
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#newsBox
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    margin: 0 1rem;
+}
+.newsUpdate
+{
+    padding: 2rem 0;
+}
+.newsUpdate p 
+{
+    padding: 1rem 0;
+}
+.readMore
+{
+    color: #e7d0ba;
+    font-size: .8rem;
+}
+.date
+{
+    color: #e7d0ba;
+    opacity: 0.6;
+    padding: 0;
+    padding-bottom: 1rem;
+    font-size: .7rem;
+}
+.newsHeadline
+{
+    padding: 0;
+    text-align: left;
+}
+.twitterDate
+{
+    font-size: .5rem;
+    text-align: left;
+    color: #e7d0ba;
+}
+
+/* Album Section section tweaks */
+/* #albumSection
+{
+    padding-top: 5%;
+    height: 100vh;
+    position: relative;
+} */
+#albumGrids 
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.trackListing
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    text-align: left;
+    padding-bottom: 3rem;
+}
+
+/* Footer defaults (used by all pages) */
+footer
+{
+    padding: 5rem 0;
+}
+
+#createdBy
+{
+    padding-top: 2rem;
+}
+
+/* CONTACT PAGE */
+/* Contact field */
+
+#contactForm
+{
+    padding-top: 5%;
+    height: 100vh;
+    text-align: left;
+}
+#contactForm div
+{
+    padding-top: 2rem;
+}
+#contactForm legend
+{
+    text-align: left;
+    margin-left: 25%;
+}
+#nameField
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#nameField > label:nth-child(1)
+{
+    grid-column: 2/span 1;
+}
+#nameField > label:nth-child(2)
+{
+    grid-column: 3/span 1;
+}
+
+div > label > input
+{
+    width: 90%;
+    height: 2rem;
+}
+
+#emailField
+{
+    width: 53%;
+    margin-left: 25%;
+    height: 2rem;
+}
+#subjectField
+{
+    width: 53%;
+    margin-left: 25%;
+    height: 2rem; 
+}
+#messageField
+{
+    width: 53%;
+    margin-left: 25%;
+    height: 2rem;
+}
+#contactMessage
+{
+    height: 10rem;
+}
+#submitField
+{
+    margin-left:45%;
+    margin-top: 10%;
+}
+
+/* Media changes: */
+
+/* Tablet in landscape mode */
+@media(max-width:1024px)
+{
+    #desktopNav li
+    {
+        display: none;
+    }
+    #tabletNav li
+    {
+        display: inline;
+    }
+    #title
+    {
+        display: block;
+    }
+}
+
+@media(max-width:500px)
+{
+    #topOfPage li
+    {
+        display:none;
+    }
+    #newsSection
+    {
+        display: block;
+        padding: 0;
+    }
+    #newsBox
+    {
+        display: block;
+    }
+    .playAlbum img
+    {
+        height: 122px;
+        width: 180px;
+        position: relative;
+    }
+    #bandMemberimg img
+{
+    width: 180px;
+    height: 122px;
+    position: relative;
+}
+}
