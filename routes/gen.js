@@ -9,7 +9,7 @@ route.get('/aboutMe', (req,res)=>{
     res.render('general/aboutMe')
 })
 
-route.get('/contactMe', (req,res)=>{
-    res.render('general/contactMe')
+route.get('/links', (req,res)=>{
+    res.render('general/Links')
 })
 module.exports = route;
