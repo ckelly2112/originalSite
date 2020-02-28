@@ -105,15 +105,18 @@ main h1{
 
 /* Project List Defaults */
 #projectList ul{
-  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 1rem;
+  list-style: none;
 }
 #projectList li{
-  display: block;
-  text-decoration: none;
   padding: 1.5rem;
 }
 
+.websiteLink:hover{
+  opacity: 50%;
+}
 #RushOverview p{
   padding: 1rem 0;
 }
