@@ -18,7 +18,7 @@ body{
 }
 a{
   text-decoration: none;
-  color: red;
+  color: #216353;
 }
 .noDisplayLink{
   text-decoration: none;
@@ -120,7 +120,7 @@ main h1{
   color: black;
 }
 #linkNav a{
-  color: #7a4d1d;
+  color: #216353;
   font-size: 28px;
   padding: 2rem;
 }
