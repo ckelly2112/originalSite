@@ -9,12 +9,9 @@ body{
   color: #7a4d1d;
   font-family: 'Noto Sans TC' ;
   font-weight: bold;
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   margin: 0;
   font-size: large;
-  text-align: justify left;
 }
 a{
   text-decoration: none;
@@ -55,7 +52,6 @@ footer a{
 
 #templateBody{
   padding-bottom: 50px;
-  position: relative;
   min-height: 100%;
   max-height: 100%;
 }
@@ -146,10 +142,14 @@ h2{
   }
   #bodyAndSide{
     display: block;
+
   }
   #templateAside{
+    position: absolute;
     background-color: #75daad;
     padding-bottom: 50px;
+    bottom: 0;
+    width: 100vw;
 
   }
   #projectList ul{
@@ -158,6 +158,8 @@ h2{
   #mainNavigation ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-size: x-large;
+    padding: 1rem
   }
   #mainNavigation li{
     padding-bottom: 1rem;
