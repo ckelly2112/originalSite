@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Christopher Kelly</title>
-    <link rel="stylesheet" href="/css/style.css"/>
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Crushed&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Crushed&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header id="mainHeader">
         <h1><a href="/" class="customLink">Christopher Kelly</a></h1>
+        <nav id="mainNavigation">
+            <ul>
+                <li><a href="/" class="linkButton">Home</a></li>
+                <li><a href="/web" class="linkButton">Websites</a></li>
+
+                {{!-- <li><a href="/apps" class="linkButton">Apps</a></li> --}}
+
+                <li><a href="/aboutMe" class="linkButton">About Me</a></li>
+                <li><a href="/links" class="linkButton">Links</a></li>
+            </ul>
+        </nav>
     </header>
- <nav id="mainNavigation">
-     <ul>
-         <li><a href="/" class="linkButton">Home</a></li>
-         <li><a href="/web" class="linkButton">Websites</a></li>
+    <div id="bodyAndSide">
 
-         {{!-- <li><a href="/apps" class="linkButton">Apps</a></li> --}}
+        <div id="templateBody">
+            {{{body}}}
+        </div>
+        <aside id="templateAside">
+            <h2 class="asideHeader">Contact Info</h4>
+            <ul class="asideList">
+                <li><span id="listSpan">Name:</span> Christopher Kelly</li>
+                <li><span id="listSpan"><i class="fas fa-phone-square"></i></span> 905-995-1105</li>
+                <li><span id="listSpan"><i class="fas fa-at"></i></span> <a href="mailto: ckelly.tor@gmail.com" class="noDisplayLink">ckelly.tor@gmail.com</a></li>
+            </ul>
+        </aside>
+    </div>
 
-         <li><a href="/aboutMe" class="linkButton">About Me</a></li>
-         <li><a href="/links" class="linkButton">Links</a></li>
-     </ul>
- </nav>
- <div id="templateBody">
-    {{{body}}}
- </div>
- 
- <footer>
+    <footer>
         <footer>
             <div id="icons">
                 <a href="https://www.linkedin.com/in/ckellytor" target="none"><i class="fab fa-linkedin"></i></a>
@@ -40,4 +53,5 @@
         </footer>
     </footer>
 </body>
+
 </html>
