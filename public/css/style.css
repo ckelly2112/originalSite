@@ -102,6 +102,9 @@ main h1{
   color: #75daad;
   padding-bottom: 1rem;
 }
+h2{
+  text-decoration: underline;
+}
 
 /* Project List Defaults */
 #projectList ul{
@@ -147,5 +150,20 @@ main h1{
     background-color: #75daad;
     padding-bottom: 50px;
 
+  }
+  #projectList ul{
+    display: block;
+  }
+  #mainNavigation ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #mainNavigation li{
+    padding-bottom: 1rem;
+    text-align: left;
+  }
+  #mainHeader{
+    padding: 0;
+    text-align: left;
   }
 }
