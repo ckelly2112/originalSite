@@ -115,6 +115,7 @@ h2{
 }
 #projectList li{
   padding: 1.5rem;
+  text-align: center;
 }
 
 .websiteLink:hover{
