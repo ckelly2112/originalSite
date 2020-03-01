@@ -150,13 +150,27 @@ h1 h2 h3 h4 h5{
     display: block;
 
   }
+  #bodyAndSide{
+    height: 70vh;
+  }
   #templateAside{
-    position: absolute;
+    position: relative;
     background-color: #75daad;
-    padding-bottom: 50px;
+    margin-top: 1em;
+    padding-bottom: 120px;
     bottom: 0;
     width: 100vw;
 
+  }
+  footer{
+    height: 120px;
+  }
+  #footerContent a{
+    font-size: 24px;
+  }
+
+  footer h6{
+    font-size: 24px;
   }
   #projectList ul{
     display: block;
