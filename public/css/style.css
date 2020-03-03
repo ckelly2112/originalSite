@@ -154,8 +154,9 @@ h2{
     padding-bottom: 50px;
 
   }
-  footer{
-    height: 50px;
+  footer a{
+    padding: .5em;
+    line-height: 25px;
   }
 
   #projectList ul{
@@ -164,7 +165,7 @@ h2{
   #mainNavigation ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1rem
+    line-height: 30px;
   }
   #mainNavigation li{
     padding-bottom: 1rem;
